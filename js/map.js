@@ -5,8 +5,8 @@ var mapObject,
 			{
 				logoUrl: 'img/map/infoimg.png',
 				address: '1234 Street Name, City Name, USA',
-				title: 'FoodBoard Restaurant',
-				mail: 'info@yourdomain.com',
+				title: 'E-cantina',
+				mail: 'monteiromatheus047@gmail.com',
 				phone: '+3630123456789',
 				latitude: 40.697149,
 				longitude: -74.259865

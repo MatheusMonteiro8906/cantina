@@ -3091,3 +3091,37 @@ label.cbx {
 		width: 100px;
 	}
 }
+
+
+/*	Cart*/
+
+.cart-dropdown {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    padding: 20px 20px 47px;
+    position: absolute;
+    right: 0;
+    top: 140%;
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    width: 316px;
+    z-index: 9999;
+}
+.header-cart:hover .cart-dropdown,
+.header-cart-2:hover .cart-dropdown {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.header-cart-3:hover .cart-dropdown {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+.header-cart-4:hover .cart-dropdown {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}

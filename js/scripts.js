@@ -433,7 +433,7 @@
 	var actualQty = 0;
 	var maxQty = 10;
 	var subSum = 0;
-	var deliveryFee = 10;
+	//var deliveryFee = 10;
 	var total = 0;
 
 	// Function to set empty cart image
@@ -477,7 +477,7 @@
 
 		});
 		//Add delivery fee
-		total = total + (deliveryFee * 1);
+		//total = total + (deliveryFee * 1);
 
 		// Set total
 		$('.total').val(total.toFixed(2));
