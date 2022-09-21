@@ -3125,3 +3125,18 @@ label.cbx {
     top: 100%;
     visibility: visible;
 }
+
+@media (min-width: 767px) {
+	.box {
+		margin-left: 100px !important;
+		margin-right: 100px !important;
+	}
+}
+@media (min-width: 1000px) {
+	.box {
+		margin-left: 200px !important;
+		margin-right: 200px !important;
+	}
+}
+
+
