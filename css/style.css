@@ -788,8 +788,8 @@ footer.main-footer h5 {
 }
 
 footer.main-footer {
-	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-top: 40px;
+	padding-bottom: 20px;
 	color: #bcbcbc;
 	background-color: #121921;
 	border-top: 1px solid #ddd;

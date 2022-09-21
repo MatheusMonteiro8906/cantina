@@ -29,7 +29,7 @@ function confirmGuestOrder(event) {
                 'quantity': quantity
             });
         });
-        $('#submitPayment').html('Processing...').css('text-align', 'left');
+        $('#submitPayment').html('Processando...').css('text-align', 'left');
         $('.spinner-icon').show();
         $.ajax({
             contentType: 'application/json',

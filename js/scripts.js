@@ -443,7 +443,7 @@
 		$('#itemList').append('<li id="emptyCart"></li>');
 
 		// Fill the dedicated row
-		$('#emptyCart').html('<div class="order-list-img"><img src="../img/bg/empty-cart-small.jpg" alt="Your cart is empty"/></div><div class="order-list-details"> <h4>Your cart is empty</a><br/><small>Start adding items</small></h4> <div class="order-list-price format-price">0.00</div></div>');
+		$('#emptyCart').html('<div class="order-list-img"><img src="../img/bg/empty-cart-small.jpg" alt="O seu carrinho está vazio!"/></div><div class="order-list-details"> <h4>O seu carrinho está vazio!</a><br/><small>Que tal adicionar algo?</small></h4> <div class="order-list-price format-price">0.00</div></div>');
 		formatPrice();
 	}
 
@@ -476,8 +476,6 @@
 			total += ($(this).text().match(/[0-9.]+/g) * 1);
 
 		});
-		//Add delivery fee
-		//total = total + (deliveryFee * 1);
 
 		// Set total
 		$('.total').val(total.toFixed(2));

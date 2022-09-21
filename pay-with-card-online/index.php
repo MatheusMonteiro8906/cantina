@@ -147,32 +147,6 @@ require_once __DIR__ . '/Config/Config.php';
 							<!-- Filter Area End -->
 							<!-- Grid -->
 							<div class="row grid">
-								<!-- Grid Item 01 -->
-								<div id="gridItem01" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item pizza">
-									<div class="item-body">
-										<figure>
-											<img src="../img/bg/lazy-placeholder.jpg" data-src="../img/gallery/grid-items/01.jpg" class="img-fluid lazy" alt="">
-											<a href="#modalDetailsItem01" class="item-body-link modal-opener">
-												<div class="item-title">
-													<h3>Aspen</h3>
-													<small>Bacon, Onion, Mushroom ...</small>
-												</div>
-											</a>
-										<!--<div class="ribbon-size"><span>Size: M</span></div>-->
-										</figure>
-										<ul>
-											<li>
-												<a href="#modalOptionsItem01" class="item-size modal-opener">Options</a>
-											</li>
-											<li>
-												<span class="item-price format-price">8.00</span>
-											</li>
-											<li>
-												<a href="javascript:;" class="add-options-item-to-cart"><i class="icon icon-shopping-cart"></i></a>
-											</li>
-										</ul>
-									</div>
-								</div>
 								<!-- Grid Item 05 -->
 								<div id="gridItem05" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 isotope-item  vegetarian">
 									<div class="item-body">
@@ -203,7 +177,7 @@ require_once __DIR__ . '/Config/Config.php';
 											<a href="#modalDetailsItem06" class="item-body-link modal-opener">
 												<div class="item-title">
 													<h3>Greek Salad</h3>
-													<small>Tomato, Onion, Olives ... </small>
+													<small>Tomato, Onion, Olives, Cocumber </small>
 												</div>
 											</a>
 										</figure>
@@ -490,22 +464,20 @@ require_once __DIR__ . '/Config/Config.php';
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
-						<h5 class="footer-heading">Menu Links</h5>
+					<div id="logo">
+							<h1><a href="#" title="FoodBoard">FoodBoard</a></h1>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<h5 class="footer-heading">Links úteis</h5>
 						<ul class="list-unstyled nav-links">
-							<li><i class="fa fa-angle-right"></i> <a href="#" class="footer-link">Home</a></li>
-							<li><i class="fa fa-angle-right"></i> <a href="../faq.html" class="footer-link">FAQ</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="../index.html" class="footer-link">Home</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="../pay-with-card-online/index.php" class="footer-link">Cardápio</a></li>
 							<li><i class="fa fa-angle-right"></i> <a href="../contacts.html" class="footer-link">Contacts</a></li>
 						</ul>
 					</div>
-					<div class="col-md-3">
-						<h5 class="footer-heading">Order Wizard</h5>
-						<ul class="list-unstyled nav-links">
-							<li><i class="fa fa-angle-right"></i> <a href="../pay-with-card-online/" class="footer-link">Pay online</a></li>
-							<li><i class="fa fa-angle-right"></i> <a href="../pay-with-cash-on-delivery/" class="footer-link">Pay with cash on delivery</a></li>
-						</ul>
-					</div>
 					<div class="col-md-4">
-						<h5 class="footer-heading">Contacts</h5>
+						<h5 class="footer-heading">Contato</h5>
 						<ul class="list-unstyled contact-links">
 							<li><i class="icon icon-map-marker"></i><a href="https://goo.gl/maps/vKgGyZe2JSRLDnYH6" class="footer-link" target="_blank">Address: 1234 Street Name, City Name, USA</a>
 							</li>
@@ -513,7 +485,7 @@ require_once __DIR__ . '/Config/Config.php';
 							<li><i class="icon icon-phone2"></i><a href="tel:+3630123456789" class="footer-link">Phone: +3630123456789</a></li>
 						</ul>
 					</div>
-					<div class="col-md-2">
+					<!--<div class="col-md-2">
 						<h5 class="footer-heading">Find Us On</h5>
 						<ul class="list-unstyled social-links">
 							<li><a href="https://facebook.com" class="social-link" target="_blank"><i class="icon icon-facebook"></i></a></li>
@@ -521,14 +493,14 @@ require_once __DIR__ . '/Config/Config.php';
 							<li><a href="https://instagram.com" class="social-link" target="_blank"><i class="icon icon-instagram"></i></a></li>
 							<li><a href="https://pinterest.com" class="social-link" target="_blank"><i class="icon icon-pinterest"></i></a></li>
 						</ul>
-					</div>
+					</div>-->
 				</div>
 				<hr>
 				<div class="row">
 					<div class="col-md-8">
 						<ul id="subFooterLinks">
-							<li><a href="https://themeforest.net/user/ultimatewebsolutions" target="_blank">With <i class="fa fa-heart pulse"></i> by UWS</a></li>
-							<li><a href="../pdf/terms.pdf" target="_blank">Terms and conditions</a></li>
+							<li><a>Desenvolvido por Matheus Monteiro e Luís Brandino</a></li>
+							<!--<li><a href="../pdf/terms.pdf" target="_blank">Terms and conditions</a></li>-->
 						</ul>
 					</div>
 					<div class="col-md-4">
@@ -583,40 +555,7 @@ require_once __DIR__ . '/Config/Config.php';
 	<!-- Modal Warning Qty max. Limit End -->
 
 	<!-- Modal Options for Item 01 -->
-	<div id="modalOptionsItem01" class="modal-popup zoom-anim-dialog mfp-hide">
-		<div class="small-dialog-header">
-			<h3>Aspen</h3>
-			<div class="addedToCartMsgInModal">Item adicionado ao carrinho!</div>
-			<div class="alreadyInCartMsgInModal">O item já está no carrinho!</div>
-		</div>
-		<div class="content">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<label class="cbx radio-wrapper">
-						<input type="radio" value="Copo pequeno" name="size-options-item-01">
-						<span class="checkmark"></span>
-						<span class="radio-caption">Copo pequeno: x ML</span><span class="option-price format-price">4.30</span>
-					</label>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<label class="cbx radio-wrapper">
-						<input type="radio" value="Copo médio" name="size-options-item-01" checked>
-						<span class="checkmark"></span>
-						<span class="radio-caption">Copo médio: x ML</span><span class="option-price format-price">8.00</span>
-					</label>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<label class="cbx radio-wrapper">
-						<input type="radio" value="Copo grande" name="size-options-item-01">
-						<span class="checkmark"></span>
-						<span class="radio-caption">Copo grande: x ML</span><span class="option-price format-price">14.30</span>
-					</label>
-				</div>
-			</div>
+
 			<!--<div class="row">
 				<div class="col-md-12 col-sm-12">
 					<input type="hidden" id="item01ExtraTitle" name="item01ExtraTitle" value="Extra Cheese" />
@@ -633,16 +572,6 @@ require_once __DIR__ . '/Config/Config.php';
 			</div>-->
 		</div>
 		<!-- Content End -->
-		<div class="footer">
-			<div class="row">
-				<div class="col-4 pr-0">
-					<button type="button" class="btn-modal-close">Fechar</button>
-				</div>
-				<div class="col-8">
-					<button type="button" class="btn-modal add-options-item-to-cart">Adicionar ao carrinho</button>
-				</div>
-			</div>
-		</div>
 		<!-- Footer End -->
 	</div>
 	<!-- Modal Options for Item 01 End -->
@@ -698,16 +627,7 @@ require_once __DIR__ . '/Config/Config.php';
 			</div>
 		</div>-->
 		<!-- Content End -->
-		<div class="footer">
-			<div class="row">
-				<div class="col-4 pr-0">
-					<button type="button" class="btn-modal-close">Close</button>
-				</div>
-				<div class="col-8">
-					<button type="button" class="btn-modal add-options-item-to-cart">Add to Cart</button>
-				</div>
-			</div>
-		</div>
+
 		<!-- Footer End -->
 	</div>
 	<!-- Modal Options for Item 02 End -->
@@ -763,16 +683,6 @@ require_once __DIR__ . '/Config/Config.php';
 			</div>
 		</div>-->
 		<!-- Content End -->
-		<div class="footer">
-			<div class="row">
-				<div class="col-4 pr-0">
-					<button type="button" class="btn-modal-close">Close</button>
-				</div>
-				<div class="col-8">
-					<button type="button" class="btn-modal add-options-item-to-cart">Add to Cart</button>
-				</div>
-			</div>
-		</div>
 		<!-- Footer End -->
 	</div>
 	<!-- Modal Options for Item 03 End -->
@@ -828,16 +738,6 @@ require_once __DIR__ . '/Config/Config.php';
 			</div>
 		</div>-->
 		<!-- Content End -->
-		<div class="footer">
-			<div class="row">
-				<div class="col-4 pr-0">
-					<button type="button" class="btn-modal-close">Close</button>
-				</div>
-				<div class="col-8">
-					<button type="button" class="btn-modal add-options-item-to-cart">Add to Cart</button>
-				</div>
-			</div>
-		</div>
 		<!-- Footer End -->
 	</div>
 	<!-- Modal Options for Item 04 End -->
@@ -850,7 +750,7 @@ require_once __DIR__ . '/Config/Config.php';
 		<div class="content pb-1">
 			<figure><img src="../img/gallery/grid-items-large/01.jpg" alt="" class="img-fluid"></figure>
 			<h6 class="mb-1">Ingredients</h6>
-			<p>Bacon, Onion, Mushroom, Mozarella</p>
+			<p class="ingredients">Bacon, Onion, Mushroom, Mozarella</p>
 		</div>
 		<div class="footer">
 			<div class="row">
