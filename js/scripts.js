@@ -320,7 +320,7 @@
 			return value !== '$ 0.00';
 		},
 		messages: {
-			en: 'Order is empty.'
+			en: 'O pedido está vazio.'
 		}
 	});
 
