@@ -763,23 +763,7 @@ require_once __DIR__ . '/Config/Config.php';
 	<!-- Modal Details for Item 1 End -->
 
 	<!-- Modal Details for Item 02 -->
-	<div id="modalDetailsItem02" class="modal-popup zoom-anim-dialog mfp-hide">
-		<div class="small-dialog-header">
-			<h3>Bolognese</h3>
-		</div>
-		<div class="content pb-1">
-			<figure><img src="../img/gallery/grid-items-large/02.jpg" alt="" class="img-fluid"></figure>
-			<h6 class="mb-1">Ingredients</h6>
-			<p>Ragu, Mozzarella</p>
-		</div>
-		<div class="footer">
-			<div class="row">
-				<div class="col-4 pr-0">
-					<button type="button" class="btn-modal-close">Close</button>
-				</div>
-			</div>
-		</div>
-	</div>
+	
 	<!-- Modal Details for Item 02 End -->
 
 	<!-- Modal Details for Item 03 -->

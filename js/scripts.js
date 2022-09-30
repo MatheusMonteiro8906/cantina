@@ -97,7 +97,7 @@
 		// Prevent moving forward if total is zero
 		beforeForward: function (event, state) {
 
-			if ($('.total').val() == '$ 0.00') {
+			if ($('.total').val() == 'R$ 0.00') {
 				validateTotal();
 				return false; // prevent moving forward
 			}
@@ -317,7 +317,7 @@
 	// Add custom empty order validation
 	window.Parsley.addValidator('emptyOrder', {
 		validateString: function (value) {
-			return value !== '$ 0.00';
+			return value !== 'R$ 0.00';
 		},
 		messages: {
 			en: 'O pedido está vazio.'
@@ -338,7 +338,7 @@
 	// Function to format item prices usign priceFormat plugin
 	function formatPrice() {
 		$('.format-price').priceFormat({
-			prefix: '$ ',
+			prefix: 'R$ ',
 			centsSeparator: '.',
 			thousandsSeparator: ','
 		});
