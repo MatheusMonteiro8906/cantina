@@ -3252,6 +3252,9 @@ label.cbx {
 		margin-left: 100px !important;
 		margin-right: 100px !important;
 	}
+	.centerSwitch {
+		padding-top: 8px;
+	}
 }
 @media (min-width: 1000px) {
 	.box2 {
