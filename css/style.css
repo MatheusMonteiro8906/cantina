@@ -141,8 +141,8 @@ html * {
 }
 
 html ::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
+	width: 5px;
+	height: 5px;
 }
 
 html ::-webkit-scrollbar-button {
@@ -3255,6 +3255,11 @@ label.cbx {
 	.centerSwitch {
 		padding-top: 8px;
 	}
+	.order-body {
+		padding: 30px;
+		padding-bottom: 8px !important;
+
+	}
 }
 @media (min-width: 1000px) {
 	.box2 {
@@ -3379,4 +3384,8 @@ label.cbx {
   
   .slider.round:before {
 	border-radius: 50%;
+  }
+
+  .textDashboard {
+	color: #2f2f2f !important;
   }
