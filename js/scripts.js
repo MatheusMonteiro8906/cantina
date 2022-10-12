@@ -295,11 +295,18 @@
 	// INIT DROPDOWNS
 	// =====================================================
 	$('#category').niceSelect();
-
+	$('#category2').niceSelect();
 	// =====================================================
 	// FORM LABELS
 	// =====================================================
 	new FloatLabels('#orderForm', {
+		style: 1
+	});
+
+	new FloatLabels('#EditForm', {
+		style: 1
+	});
+	new FloatLabels('#CreateForm', {
 		style: 1
 	});
 

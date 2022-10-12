@@ -1,35 +1,3 @@
-/*
-Template Name: FoodBoard
-Template URL: https://ultimatewebsolutions.net/foodboard/
-Author: Ultimate Websolutions
-Author URL: https://themeforest.net/user/ultimatewebsolutions/
-
-[Table of contents]
-
-01. PRELOADER
-02. GENERAL
-03. MODAL ALERT
-04. MODAL DIALOG
-05. CART MESSAGES
-06. HEADER
-07. SUB HEAEDR
-08. FOOTER
-09. HERO
-10. SERVICES
-11. BANNER
-12. FAQ
-13. MAP
-14. CONTAINERS
-15. ORDER ITEMS
-16. FORM ELEMENTS
-17. ORDER SUMMARY
-18. CONFIRMATION
-19. BACK TO TOP
-20. RESPONSIVE
-
-/* Preloader
-==================================== */
-
 #preloader {
 	position: fixed;
 	top: 0;
@@ -132,7 +100,7 @@ Author URL: https://themeforest.net/user/ultimatewebsolutions/
 	}
 }
 
-/* General
+/* Geral
 ==================================== */
 
 html * {
@@ -2594,9 +2562,32 @@ input.form-control:disabled {
 	margin-bottom: 10px;
 	height: 45px;
 }
+.btn-form-func2 {
+	background: #f25c04;
+	border-radius: 5px;
+	border: 2px solid #f25c04;
+	color: #fff;
+	display: inline-block;
+	overflow: hidden;
+	padding: 12px 30px 12px 16px;
+	position: relative;
+	text-decoration: none;
+	line-height: 1;
+	width: 100%;
+	font-weight: 600;
+	margin-bottom: 10px;
+	height: 45px;
+}
+
 
 .btn-form-func:hover {
 	color: #fff;
+}
+
+.btn-form-func2:hover {
+	background-color: #fff;
+	color: #f25c04;
+	transition: .4s;
 }
 
 .btn-form-func .btn-form-func-content {
@@ -2660,6 +2651,16 @@ input.form-control:disabled {
 }
 
 .btn-form-func.btn-form-func-alt-color1 {
+	background: #fff;
+	border-color: rgb(253, 58, 58);
+	color: rgb(255, 52, 52) !important;
+}
+.btn-form-func-alt-color1:hover {
+       background-color: #fb8f8f;
+	   transition: .4s;
+}
+
+.btn-form-func2.btn-form-func-alt-color1 {
 	background: #fff;
 	border-color: rgb(253, 58, 58);
 	color: rgb(255, 52, 52) !important;
@@ -3389,3 +3390,34 @@ label.cbx {
   .textDashboard {
 	color: #2f2f2f !important;
   }
+
+
+  /*View Products*/
+
+  .viewProducts {
+	background: rgba( 230, 215, 206, 0.35 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 14px );
+   	-webkit-backdrop-filter: blur( 14px );	
+   	padding-left: 50px !important;
+  }
+
+  .editTittleProd{
+	text-align: left;
+	padding-top: 10px !important;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.numberOrder{
+	color: rgb(61, 139, 228);
+	font-weight: 700;
+	font-size: 15px;
+}
+
+.contentOrders p {
+	margin: 10px;
+}

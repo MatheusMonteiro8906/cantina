@@ -68,34 +68,12 @@ require_once __DIR__ . '/Config/Config.php';
 						</div>
 					</div>
 					<div class="col-lg-9 col-6">
-						<ul id="menuIcons">
-							<li><a href="#"><i class="icon icon-shopping-cart2"></i></a></li>
-						</ul>
 						<!-- Menu -->
 						<nav id="menu" class="main-menu">
 							<ul>
-								<li><span><a href="#">Home</a></span></li>
-							<!--	<li>
-									<span><a href="#">Order <i class="fa fa-chevron-down"></i></a></span>
-									<ul>
-										<li>
-											<span><a href="#">Pay online</a></span>
-											<ul>
-												<li><a href="../pay-with-card-online/">Demo 1 - Filtering</a></li>
-												<li><a href="../pay-with-card-online/order-2.php">Demo 2 - Sticky navigation</a></li>
-											</ul>
-										</li>
-										<li>
-											<span><a href="#">Pay with cash</a></span>
-											<ul>
-												<li><a href="../pay-with-cash-on-delivery/">Demo 1 - Filtering</a></li>
-												<li><a href="../pay-with-cash-on-delivery/order-2.php">Demo 2 - Sticky navigation</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>-->
-								<li><span><a href="../pay-with-cash-on-delivery/">Cardápio</a></span></li>
-								<li><span><a href="../contacts.html">Vai ser pra se registrar</a></span></li>
+								<li><span><a href="../">Home</a></span></li>
+								<li><span><a href="../pay-with-card-online/">Cardápio</a></span></li>
+								<li><span><a href="../">Vai ser pra se registrar</a></span></li>
 							</ul>
 						</nav>
 						<!-- Menu End -->
@@ -473,18 +451,8 @@ require_once __DIR__ . '/Config/Config.php';
 						<ul class="list-unstyled nav-links">
 							<li><i class="fa fa-angle-right"></i> <a href="../index.html" class="footer-link">Home</a></li>
 							<li><i class="fa fa-angle-right"></i> <a href="../pay-with-card-online/index.php" class="footer-link">Cardápio</a></li>
-							<li><i class="fa fa-angle-right"></i> <a href="../contacts.html" class="footer-link">Contacts</a></li>
 						</ul>
-					</div>
-					<div class="col-md-4">
-						<h5 class="footer-heading">Contato</h5>
-						<ul class="list-unstyled contact-links">
-							<li><i class="icon icon-map-marker"></i><a href="https://goo.gl/maps/vKgGyZe2JSRLDnYH6" class="footer-link" target="_blank">Address: 1234 Street Name, City Name, USA</a>
-							</li>
-							<li><i class="icon icon-envelope3"></i><a href="mailto:info@yourdomain.com" class="footer-link">Mail: info@yourdomain.com</a></li>
-							<li><i class="icon icon-phone2"></i><a href="tel:+3630123456789" class="footer-link">Phone: +3630123456789</a></li>
-						</ul>
-					</div>
+					</div>	
 					<!--<div class="col-md-2">
 						<h5 class="footer-heading">Find Us On</h5>
 						<ul class="list-unstyled social-links">
@@ -504,7 +472,7 @@ require_once __DIR__ . '/Config/Config.php';
 						</ul>
 					</div>
 					<div class="col-md-4">
-						<div id="copy">Copyright</div>
+						<div id="copy">Copyright @2022</div>
 					</div>
 				</div>
 			</div>
