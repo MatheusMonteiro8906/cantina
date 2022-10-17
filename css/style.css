@@ -2969,7 +2969,7 @@ label.cbx {
 .tbl-cart {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border: 1px solid #ccc;
+	border: 1px solid #ccc;	
 }
 
 .tbl-cart tr, th, td {
@@ -2985,6 +2985,9 @@ label.cbx {
 	text-align: right;
 }
 
+.distanciarFooter{
+	padding-bottom: 15px;
+}
 /* Back To Top
 ==================================== */
 
@@ -3420,4 +3423,14 @@ label.cbx {
 
 .contentOrders p {
 	margin: 10px;
+}
+
+/*Página de status*/
+
+.PaymentUndone {
+	color: red;
+}
+
+.PaymentDone{
+	color: green;
 }
