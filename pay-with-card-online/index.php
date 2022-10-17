@@ -348,26 +348,11 @@ require_once __DIR__ . '/Config/Config.php';
 														</div>
 													</div>
 												</div>
+											
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label for="phoneCashPayment">Telefone</label>
-															<input id="phoneCashPayment" class="form-control" name="phone" type="text" data-parsley-pattern="^[0-9]+$" required />
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label for="emailCashPayment">Email</label>
-															<input id="emailCashPayment" class="form-control" name="email" type="email" required />
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label for="messageCashPayment">Mensagem</label>
+															<label for="messageCashPayment">Nome do coletor</label>
 															<input id="messageCashPayment" class="form-control" name="message" type="text" data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$" />
 														</div>
 													</div>

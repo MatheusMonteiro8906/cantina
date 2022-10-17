@@ -125,6 +125,7 @@ require_once __DIR__ . '/Config/Config.php';
 							<h3>Detalhes do pedido:</h3>
 							<div>
 								<strong>Nome: </strong><span class="Username">LUIS</span> <br>
+								<strong>Nome do coletor: </strong><span class="Colector">Matheus</span> <br>
 								<strong>Status do pedido: </strong><span class="PaymentUndone">Aguardando pagamento <i class="fa-regular fa-clock"></i></span>
 
 							</div>
