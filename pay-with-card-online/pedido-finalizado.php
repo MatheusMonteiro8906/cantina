@@ -122,13 +122,21 @@ require_once __DIR__ . '/Config/Config.php';
 									</tr>
 								</tbody>
 							</table>
-							<h3>Detalhes do pedido:</h3>
+
+							<h3>Pix para pagamento:</h3>
+							
+							<div class="row">
+								<img src="../img/QR.png" alt="Fodase seu cego" class="PixPage">
+								<h5 class="Cnpj"> CNPJ: <button> <span id="pix">4530943-43</span> </h5>
+							</div>
+
+							<h3 class="OrderDetails">Detalhes do pedido:</h3>
 							<div>
 								<strong>Nome: </strong><span class="Username">LUIS</span> <br>
 								<strong>Nome do coletor: </strong><span class="Colector">Matheus</span> <br>
-								<strong>Status do pedido: </strong><span class="PaymentUndone">Aguardando pagamento <i class="fa-regular fa-clock"></i></span>
-
 							</div>
+
+							
 							<p class="mb-0 distanciarFooter"><a href="../" class="btn-2 col-10 text-center">Voltar para a
 									Home</a></p>
 					</div>

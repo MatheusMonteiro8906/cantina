@@ -3039,6 +3039,19 @@ label.cbx {
 		margin-left: 130px;
 		padding-right: 60px;
 	  }
+	  .PixPage {
+		max-width: 300px;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 300px;
+		border: 1px solid #f25c04;
+		display: block;
+	}
+	.Cnpj{
+		margin-top: 10px;
+        margin-left: 25% !important;
+	}
 }
 
 @media (max-width: 767px) {
@@ -3265,6 +3278,9 @@ label.cbx {
 		padding-bottom: 8px !important;
 
 	}
+	.PixPage {
+		margin-left: 15px;
+	}
 }
 @media (min-width: 1000px) {
 	.box2 {
@@ -3434,19 +3450,26 @@ label.cbx {
 }
 /*Página de status*/
 
-.ExtraInfo {
-
-}
 .TextEntra {
 	font-weight: 600 !important;
 	font-size: 1643px;
 	color: #111111 !important;
 }
 
-.PaymentUndone {
-	color: red;
+.PixPage {
+	/*max-width: 300px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 300px;*/
+	border: 1px solid #f25c04;
+	display: block;
 }
 
-.PaymentDone{
-	color: green;
+.OrderDetails{
+	padding-top: 10px;
+}
+
+.Cnpj {
+   margin-left: 10px;
 }
