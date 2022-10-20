@@ -422,11 +422,23 @@
 
 	<div id="modalDetailsItem03" class="dashboardModal-popup zoom-anim-dialog mfp-hide">
 		<div class="small-dialog-header">
-			<h3>Visualização de pedidos</h3>
+			<h3 class="viewModalText">Visualização de pedidos</h3>
 		</div>
 
 		<!-- Step 2: Checkout -->
 		<div class="step">
+			
+			<div class="row filter-box filters">
+				
+				<div class="col-md-12 col-sm-12" >
+					<div class="search-wrap">
+						<input id="search" type="text" class="form-control" placeholder="Pesquisar produto" />
+						<i class="icon icon-search"></i>
+					</div>
+				</div>
+
+			</div>
+
 			<h3 class="editTittleProd">pedidos atuais</h3>
 			<div id="personalDetails">
 				<div class="order-body">
@@ -447,6 +459,11 @@
 
 								</div>
 
+								<div class="ExtraInfo">
+									<p class="TextEntra">Coletor: <span>Matheus</span></p>
+									<p class="TextEntra">Preço total: R$<span class="TotalValue">25,00</span></p>
+								</div>
+
 								<div class="row">
 									<div class="col-md-7 ">
 										<button type="submit" name="finish" class="btn-form-func2">
@@ -457,7 +474,7 @@
 									<div class="col-md-5 ">
 										<button type="button" name="cancel"
 											class="btn-form-func2 btn-form-func-alt-color1 backward">
-											<span class="btn-form-func-content">Cancelar</span>
+											<span class="btn-form-func-content"><i class="fa-solid fa-x"></i></span>
 										</button>
 									</div>
 

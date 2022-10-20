@@ -2561,6 +2561,7 @@ input.form-control:disabled {
 	font-weight: 600;
 	margin-bottom: 10px;
 	height: 45px;
+
 }
 .btn-form-func2 {
 	background: #f25c04;
@@ -2569,7 +2570,7 @@ input.form-control:disabled {
 	color: #fff;
 	display: inline-block;
 	overflow: hidden;
-	padding: 12px 30px 12px 16px;
+	padding: 12px 0 12px 0;
 	position: relative;
 	text-decoration: none;
 	line-height: 1;
@@ -3394,7 +3395,7 @@ label.cbx {
 	color: #2f2f2f !important;
   }
 
-
+  
   /*View Products*/
 
   .viewProducts {
@@ -3425,7 +3426,22 @@ label.cbx {
 	margin: 10px;
 }
 
+.ExtraInfo p{
+	margin: 10px;
+}
+.TextEntra{
+	line-height: 8px;
+}
 /*Página de status*/
+
+.ExtraInfo {
+
+}
+.TextEntra {
+	font-weight: 600 !important;
+	font-size: 1643px;
+	color: #111111 !important;
+}
 
 .PaymentUndone {
 	color: red;
