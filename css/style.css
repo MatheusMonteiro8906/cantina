@@ -2929,6 +2929,12 @@ label.cbx {
 }
 
 /* Order Summary Footer */
+.main-footer {
+	display:flex; 
+	flex-direction:column; 
+	min-height:30vh;
+    bottom: 0;
+}
 
 .footer {
 	font-size: 13px;
