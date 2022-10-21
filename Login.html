@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Food order wizard with online payment">
+	<meta name="author" content="UWS">
+	<title>E-cantina dashboard</title>
+
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="shortcut icon">
+
+	<!-- Google Fonts - Jost -->
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+
+	<!-- Custom Font Icons -->
+	<link href="vendor/icomoon/css/iconfont.min.css" rel="stylesheet">
+
+	<!-- Vendor CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/dmenu/css/menu.css" rel="stylesheet">
+	<link href="vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
+	<link href="vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
+	<link href="vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+	<link href="vendor/float-labels/css/float-labels.min.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Page -->
+	<div id="page">
+
+		<!-- Header -->
+		<header class="main-header sticky">
+			<a href="#menu" class="btn-mobile">
+				<div class="hamburger hamburger--spin" id="hamburger">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-6">
+						<div id="logo">
+							<h1><a href="https://ultimatewebsolutions.net/foodboard/" title="FoodBoard">E-cantina</a>
+							</h1>
+						</div>
+					</div>
+					<div class="col-lg-9 col-6">
+						<ul id="menuIcons">
+							<li><a href="#"><i class="icon icon-support"></i></a></li>
+							<li><a href="#"><i class="icon icon-shopping-cart2"></i></a></li>
+						</ul>
+						<!-- Menu -->
+						<nav id="menu" class="main-menu">
+							<ul>
+								<li><span><a href="https://ultimatewebsolutions.net/foodboard/">Home</a></span></li>
+								<li>
+									<span><a href="#">Order <i class="fa fa-chevron-down"></i></a></span>
+									<ul>
+										<li>
+											<span><a href="#">Pay online</a></span>
+											<ul>
+												<li><a href="pay-with-card-online/">Demo 1 - Filtering</a></li>
+												<li><a href="pay-with-card-online/order-2.php">Demo 2 - Sticky
+														navigation</a></li>
+											</ul>
+										</li>
+										<li>
+											<span><a href="#">Pay with cash</a></span>
+											<ul>
+												<li><a href="pay-with-cash-on-delivery/">Demo 1 - Filtering</a></li>
+												<li><a href="pay-with-cash-on-delivery/order-2.php">Demo 2 - Sticky
+														navigation</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><span><a href="faq.html">Faq</a></span></li>
+								<li><span><a href="contacts.html">Contacts</a></span></li>
+							</ul>
+						</nav>
+						<!-- Menu End -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Main -->
+		<main>
+			<div class="LoginPadding">
+			<form method="POST" id="loginForm" name="loginForm">
+
+				<!-- Step 2: Checkout -->
+				<div class="step step2">
+
+					<div class="order-headerLogin">
+					</div>
+
+					<div id="personalData loginForm" data-consumer-key='<?php echo Config::STRIPE_PUBLISHABLE_KEY; ?>' data-create-order-url='<?php echo Config::STRIPE_CREATE_ORDER_URL; ?>' data-return-url='<?php echo Config::THANKYOU_URL; ?>' data-currency='<?php echo Config::CURRENCY; ?>'>
+						<div class="order-body2">
+							<h3 class="order-headerLogin">Formulário de Login</h3>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="emailOnlinePayment">Email</label>
+										<input id="emailOnlinePayment" class="form-control" name="email" type="email" required />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="userNameOnlinePayment">Senha</label>
+										<input id="userNameOnlinePayment" class="form-control" name="password" type="password" data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+									</div>
+								</div>
+							</div>
+
+
+							
+							<div class="row">
+								<div class="col-md-12">
+									<button type="submit" name="submit" id="submitPayment" class="btn-form-func">
+										<span class="btn-form-func-content">Conectar</span>
+										<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+									</button>
+									<div class="spinner-icon">
+										<i class="fa fa fa-cog fa-spin"></i>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Step 2: Checkout End -->
+
+			</form>
+		</div>
+		</main>
+		<!-- Main End -->
+
+		<!-- Footer -->
+		<footer class="main-footer loginFooter">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h5 class="footer-heading">Menu Links</h5>
+						<ul class="list-unstyled nav-links">
+							<li><i class="fa fa-angle-right"></i> <a href="https://ultimatewebsolutions.net/foodboard/"
+									class="footer-link">Home</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="faq.html" class="footer-link">FAQ</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="contacts.html"
+									class="footer-link">Contacts</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5 class="footer-heading">Order Wizard</h5>
+						<ul class="list-unstyled nav-links">
+							<li><i class="fa fa-angle-right"></i> <a href="pay-with-card-online/"
+									class="footer-link">Pay online</a></li>
+							<li><i class="fa fa-angle-right"></i> <a href="pay-with-cash-on-delivery/"
+									class="footer-link">Pay with cash on delivery</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h5 class="footer-heading">Contacts</h5>
+						<ul class="list-unstyled contact-links">
+							<li><i class="icon icon-map-marker"></i><a href="https://goo.gl/maps/vKgGyZe2JSRLDnYH6"
+									class="footer-link" target="_blank">Address: 1234 Street Name, City Name, USA</a>
+							</li>
+							<li><i class="icon icon-envelope3"></i><a href="mailto:info@yourdomain.com"
+									class="footer-link">Mail: info@yourdomain.com</a></li>
+							<li><i class="icon icon-phone2"></i><a href="tel:+3630123456789" class="footer-link">Phone:
+									+3630123456789</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5 class="footer-heading">Find Us On</h5>
+						<ul class="list-unstyled social-links">
+							<li><a href="https://facebook.com" class="social-link" target="_blank"><i
+										class="icon icon-facebook"></i></a></li>
+							<li><a href="https://twitter.com" class="social-link" target="_blank"><i
+										class="icon icon-twitter"></i></a></li>
+							<li><a href="https://instagram.com" class="social-link" target="_blank"><i
+										class="icon icon-instagram"></i></a></li>
+							<li><a href="https://pinterest.com" class="social-link" target="_blank"><i
+										class="icon icon-pinterest"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-md-8">
+						<ul id="subFooterLinks">
+							<li><a href="https://themeforest.net/user/ultimatewebsolutions" target="_blank">With <i
+										class="fa fa-heart pulse"></i> by UWS</a></li>
+							<li><a href="pdf/terms.pdf" target="_blank">Terms and conditions</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div id="copy">© 2021 FoodBoard</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+
+	</div>
+
+	<!-- Page End -->
+
+	<!-- Back to top button -->
+	<div id="toTop"><i class="icon icon-chevron-up"></i></div>
+
+	<div id="modalDetailsItem01" class="dashboardModal-popup zoom-anim-dialog mfp-hide">
+		<div class="small-dialog-header">
+			<h3>Edição de produtos</h3>
+		</div>
+
+		<form method="POST" id="EditForm" name="EditForm">
+
+			<div class="content pb-1">
+				<select id="category2" class="wide price-list EditarProd" name="editarProd">
+					<option value="">Selecionar produto</option>
+					<option value=".Salgados">YX</option>
+					<option value=".Doces">XY</option>
+					<option value=".Bebidas">XZ</option>
+				</select>
+			</div>
+
+			<!-- Step 2: Checkout -->
+			<div class="step">
+				<h3 class="editTittle">Formulário de edição</h3>
+				<div id="personalDetails">
+					<div class="order-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="images" class="drop-container">
+										<span class="drop-title">Arraste a imagem aqui</span>
+										ou
+										<input type="file" id="images" accept="image/*" required>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="userNameCashPayment">Nome</label>
+									<input id="userNameCashPayment" class="form-control" name="username" type="text"
+										data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="phoneCashPayment">Ingredientes</label>
+									<input id="phoneCashPayment" class="form-control" name="phone" type="text"
+										data-parsley-pattern="^[0-9]+$" required />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="phoneCashPayment">Preços</label>
+									<input id="phoneCashPayment" class="form-control" name="preco" type="number" min="0"
+										required />
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-6 ">
+								<button type="submit" name="submit" id="submitOrder" class="btn-form-func">
+									<span class="btn-form-func-content">Atualizar</span>
+									<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								</button>
+							</div>
+
+							<div class="col-md-5 justify-content-center align-content-center ">
+								<button type="button" name="backward"
+									class="btn-form-func btn-form-func-alt-color1 backward">
+									<span class="btn-form-func-content">Apagar</span>
+									<span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+								</button>
+							</div>
+
+							<div
+								class="col-md-1 justify-content-center align-content-center justify-content-center centerSwitch">
+								<label class="switch">
+									<input type="checkbox">
+									<span class="slider round"></span>
+								</label>
+							</div>
+						</div>
+						<!--<div class="row footer">
+								<div class="col-md-12 text-center">
+									<small>Copyrigth FoodBoard 2021.</small>
+								</div>
+							</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- Step 2: Checkout End -->
+
+		</form>
+	</div>
+
+
+	<div id="modalDetailsItem02" class="dashboardModal-popup zoom-anim-dialog mfp-hide">
+		<div class="small-dialog-header">
+			<h3>Criação de produtos</h3>
+		</div>
+
+		<form method="POST" id="CreateForm" name="CreateForm">
+
+			<div class="content pb-1">
+				<select id="category" class="wide price-list EditarProd" name="editarProd">
+					<option value="">Selecionar produto</option>
+					<option value=".pizza">X </option>
+					<option value=".burger">Y</option>
+					<option value=".vegetarian">Z</option>
+				</select>
+			</div>
+
+			<!-- Step 2: Checkout -->
+			<div class="step">
+				<h3 class="editTittle">Formulário de criação</h3>
+				<div id="personalDetails">
+					<div class="order-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="images" class="drop-container">
+										<span class="drop-title">Arraste a imagem aqui</span>
+										ou
+										<input type="file" id="images" accept="image/*" required>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="userNameCashPayment">Nome</label>
+									<input id="userNameCashPayment" class="form-control" name="username" type="text"
+										data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="phoneCashPayment">Ingredientes</label>
+									<input id="phoneCashPayment" class="form-control" name="phone" type="text"
+										data-parsley-pattern="^[0-9]+$" required />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="phoneCashPayment">Preços</label>
+									<input id="phoneCashPayment" class="form-control" name="preco" type="number" min="0"
+										required />
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-12">
+								<button type="submit" name="submit" id="submitOrder" class="btn-form-func">
+									<span class="btn-form-func-content">Criar produto</span>
+									<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+								</button>
+							</div>
+						</div>
+						<!--<div class="row footer">
+								<div class="col-md-12 text-center">
+									<small>Copyrigth FoodBoard 2021.</small>
+								</div>
+							</div>-->
+					</div>
+				</div>
+			</div>
+			<!-- Step 2: Checkout End -->
+
+		</form>
+
+	</div>
+
+	<div id="modalDetailsItem03" class="dashboardModal-popup zoom-anim-dialog mfp-hide">
+		<div class="small-dialog-header">
+			<h3 class="viewModalText">Visualização de pedidos</h3>
+		</div>
+
+		<!-- Step 2: Checkout -->
+		<div class="step">
+			
+			<div class="row filter-box filters">
+				
+				<div class="col-md-12 col-sm-12" >
+					<div class="search-wrap">
+						<input id="search" type="text" class="form-control" placeholder="Pesquisar produto" />
+						<i class="icon icon-search"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<h3 class="editTittleProd">pedidos atuais</h3>
+			<div id="personalDetails">
+				<div class="order-body">
+
+					<div class="row" id="RowPedidos">
+						<!--É nesse id da Row que você vai usar o ForEach -->
+
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="ExtraInfo">
+									<p class="TextEntra">Coletor: <span>Matheus</span></p>
+									<p class="TextEntra">Preço total: R$<span class="TotalValue">25,00</span></p>
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content"><i class="fa-solid fa-x"></i></span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" id="RowPedidos">
+						<!--É nesse id da Row que você vai usar o ForEach -->
+
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="box text-center">
+								<h3 class="service-title">Matheus Monteiro</h3>
+
+								<div class="contentOrders">
+
+									<p class="textDashboard"> <span class="numberOrder">2X</span> Risóles de presunto e
+										queijo </p>
+									<p class="textDashboard"> <span class="numberOrder">1X</span> Coca-cola 450ml </p>
+									<p class="textDashboard"> <span class="numberOrder">3X</span> Bala Halls</p>
+
+								</div>
+
+								<div class="row">
+									<div class="col-md-7 ">
+										<button type="submit" name="finish" class="btn-form-func2">
+											<span class="btn-form-func-content">Finalizar</span>
+										</button>
+									</div>
+
+									<div class="col-md-5 ">
+										<button type="button" name="cancel"
+											class="btn-form-func2 btn-form-func-alt-color1 backward">
+											<span class="btn-form-func-content">Cancelar</span>
+										</button>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div> 
+			
+			</div>
+		</div>
+
+	</div><!--fim do modal-->
+  </div>
+ </div>
+	<!-- Vendor Javascript Files -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/easing/js/easing.min.js"></script>
+	<script src="vendor/parsley/js/parsley.min.js"></script>
+	<script src="vendor/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendor/price-format/js/jquery.priceformat.min.js"></script>
+	<script src="vendor/theia-sticky-sidebar/js/ResizeSensor.min.js"></script>
+	<script src="vendor/theia-sticky-sidebar/js/theia-sticky-sidebar.min.js"></script>
+	<script src="vendor/mmenu/js/mmenu.min.js"></script>
+	<script src="vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+	<script src="vendor/float-labels/js/float-labels.min.js"></script>
+	<script src="vendor/jquery-wizard/js/jquery-ui-1.8.22.min.js"></script>
+	<script src="vendor/jquery-wizard/js/jquery.wizard.js"></script>
+	<script src="vendor/isotope/js/isotope.pkgd.min.js"></script>
+	<script src="vendor/scrollreveal/js/scrollreveal.min.js"></script>
+	<script src="vendor/lazyload/js/lazyload.min.js"></script>
+	<script src="vendor/sticky-kit/js/sticky-kit.min.js"></script>
+
+	<!-- Main Javascript File -->
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

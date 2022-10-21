@@ -310,6 +310,9 @@
 	new FloatLabels('#CreateForm', {
 		style: 1
 	});
+	new FloatLabels('#loginForm', {
+		style: 1
+	});
 
 	// =====================================================
 	// FORM INPUT VALIDATION

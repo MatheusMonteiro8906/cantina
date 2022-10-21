@@ -2855,6 +2855,12 @@ label.cbx {
 	border-top-right-radius: 5px;
 }
 
+.order-headerLogin{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+}
+
 .editTittle{
 	text-align: left;
 	padding-top: 80px !important;
@@ -2885,6 +2891,15 @@ label.cbx {
 	box-shadow: 0 2px 2px 0 rgb(9 30 66 / 13%);
 }
 
+.order-body2 {
+	padding: 30px;
+	border: 1px solid #ccc;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 0 2px 2px 0 rgb(9 30 66 / 13%);
+	background-color: #fff !important;
+}
 /* List */
 
 #orderContainer span {
@@ -3058,6 +3073,7 @@ label.cbx {
 		margin-top: 10px;
         margin-left: 25% !important;
 	}
+	
 }
 
 @media (max-width: 767px) {
@@ -3478,4 +3494,18 @@ label.cbx {
 
 .Cnpj {
    margin-left: 10px;
+}
+
+.step2 {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	top: 50%;
+	margin-top: 10% !important;
+}
+
+.loginFooter {
+	position: fixed;
+   bottom: 0;
+   width: 100%;
 }
